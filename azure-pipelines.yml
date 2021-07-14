@@ -7,9 +7,11 @@ trigger:
 - starting-point
 
 pool:
-  vmImage: 'macos-latest'
+  vmImage: 'ubuntu-latest'
 
 steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
 - task: Gradle@2
   inputs:
     workingDirectory: ''
